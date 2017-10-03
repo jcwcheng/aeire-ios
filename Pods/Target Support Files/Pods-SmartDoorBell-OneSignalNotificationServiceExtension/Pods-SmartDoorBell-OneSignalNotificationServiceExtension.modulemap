@@ -1,0 +1,6 @@
+framework module Pods_SmartDoorBell_OneSignalNotificationServiceExtension {
+  umbrella header "Pods-SmartDoorBell-OneSignalNotificationServiceExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}

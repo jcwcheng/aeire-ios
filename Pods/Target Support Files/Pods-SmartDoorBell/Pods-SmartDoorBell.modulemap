@@ -1,0 +1,6 @@
+framework module Pods_SmartDoorBell {
+  umbrella header "Pods-SmartDoorBell-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,835 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E6453082F3CA1C15AA3004E /* Pods_SmartDoorBell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E62E35933E7C0CF8B3C2AC9 /* Pods_SmartDoorBell.framework */; };
+		6305E79B1ED4246600F767A7 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6305E79A1ED4246600F767A7 /* IndexViewController.swift */; };
+		6305E79D1ED556E900F767A7 /* IndexCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6305E79C1ED556E900F767A7 /* IndexCollectionViewController.swift */; };
+		6305E79F1ED557AA00F767A7 /* DeviceCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6305E79E1ED557AA00F767A7 /* DeviceCollectionCell.swift */; };
+		6305E7A11ED557FB00F767A7 /* RoomCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6305E7A01ED557FB00F767A7 /* RoomCollectionCell.swift */; };
+		6305E7A31ED5582200F767A7 /* SceneCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6305E7A21ED5582200F767A7 /* SceneCollectionCell.swift */; };
+		6305E7A51ED56DA900F767A7 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6305E7A41ED56DA900F767A7 /* CallViewController.swift */; };
+		6305E7A71ED5820B00F767A7 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6305E7A61ED5820B00F767A7 /* SideMenuViewController.swift */; };
+		63B273871EA5791A00F581B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B273861EA5791A00F581B2 /* AppDelegate.swift */; };
+		63B273891EA5791A00F581B2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B273881EA5791A00F581B2 /* MainViewController.swift */; };
+		63B2738C1EA5791A00F581B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B2738A1EA5791A00F581B2 /* Main.storyboard */; };
+		63B2738E1EA5791A00F581B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63B2738D1EA5791A00F581B2 /* Assets.xcassets */; };
+		63B273911EA5791A00F581B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B2738F1EA5791A00F581B2 /* LaunchScreen.storyboard */; };
+		63B2739C1EA5791A00F581B2 /* SmartDoorBellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B2739B1EA5791A00F581B2 /* SmartDoorBellTests.swift */; };
+		63B273A91EA57AA000F581B2 /* BufferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B273A81EA57AA000F581B2 /* BufferViewController.swift */; };
+		63B273AC1EA57EC400F581B2 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B273AB1EA57EC400F581B2 /* UIExtension.swift */; };
+		63B273AF1EA57F6000F581B2 /* APIDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B273AE1EA57F6000F581B2 /* APIDefinition.swift */; };
+		63B273B11EA57F7200F581B2 /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B273B01EA57F7200F581B2 /* APIProvider.swift */; };
+		63B273B31EA5F41B00F581B2 /* MainTextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B273B21EA5F41B00F581B2 /* MainTextFieldExtension.swift */; };
+		63B273BC1EA610CA00F581B2 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B273BB1EA610CA00F581B2 /* NotificationService.swift */; };
+		63B273C01EA610CA00F581B2 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 63B273B91EA610CA00F581B2 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		63B273C71EA6234700F581B2 /* CounterRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B273C61EA6234700F581B2 /* CounterRealm.swift */; };
+		B189CB6F3B5BE1DA6DF704ED /* Pods_SmartDoorBellTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2992F5EBE973C82F63E58E74 /* Pods_SmartDoorBellTests.framework */; };
+		D89D0D19D94BB4FB69D3302C /* Pods_SmartDoorBell_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B399A6729C2C4D40BFAA3D2 /* Pods_SmartDoorBell_OneSignalNotificationServiceExtension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63B273981EA5791A00F581B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63B2737B1EA5791A00F581B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63B273821EA5791A00F581B2;
+			remoteInfo = SmartDoorBell;
+		};
+		63B273BE1EA610CA00F581B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63B2737B1EA5791A00F581B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63B273B81EA610CA00F581B2;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		63B273C41EA610CB00F581B2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				63B273C01EA610CA00F581B2 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2992F5EBE973C82F63E58E74 /* Pods_SmartDoorBellTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartDoorBellTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43CAE39C01999C7DA686805B /* Pods-SmartDoorBellTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDoorBellTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartDoorBellTests/Pods-SmartDoorBellTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4E62E35933E7C0CF8B3C2AC9 /* Pods_SmartDoorBell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartDoorBell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AC375E8F726F1536FC88429 /* Pods-SmartDoorBell-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDoorBell-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartDoorBell-OneSignalNotificationServiceExtension/Pods-SmartDoorBell-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		5B399A6729C2C4D40BFAA3D2 /* Pods_SmartDoorBell_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartDoorBell_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6305E79A1ED4246600F767A7 /* IndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
+		6305E79C1ED556E900F767A7 /* IndexCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexCollectionViewController.swift; sourceTree = "<group>"; };
+		6305E79E1ED557AA00F767A7 /* DeviceCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceCollectionCell.swift; sourceTree = "<group>"; };
+		6305E7A01ED557FB00F767A7 /* RoomCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomCollectionCell.swift; sourceTree = "<group>"; };
+		6305E7A21ED5582200F767A7 /* SceneCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneCollectionCell.swift; sourceTree = "<group>"; };
+		6305E7A41ED56DA900F767A7 /* CallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
+		6305E7A61ED5820B00F767A7 /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		63B273831EA5791A00F581B2 /* SmartDoorBell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartDoorBell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63B273861EA5791A00F581B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63B273881EA5791A00F581B2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		63B2738B1EA5791A00F581B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63B2738D1EA5791A00F581B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63B273901EA5791A00F581B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63B273921EA5791A00F581B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63B273971EA5791A00F581B2 /* SmartDoorBellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartDoorBellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63B2739B1EA5791A00F581B2 /* SmartDoorBellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartDoorBellTests.swift; sourceTree = "<group>"; };
+		63B2739D1EA5791A00F581B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63B273A81EA57AA000F581B2 /* BufferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BufferViewController.swift; sourceTree = "<group>"; };
+		63B273AB1EA57EC400F581B2 /* UIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		63B273AE1EA57F6000F581B2 /* APIDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIDefinition.swift; sourceTree = "<group>"; };
+		63B273B01EA57F7200F581B2 /* APIProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
+		63B273B21EA5F41B00F581B2 /* MainTextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTextFieldExtension.swift; sourceTree = "<group>"; };
+		63B273B41EA60C5600F581B2 /* SmartDoorBell.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartDoorBell.entitlements; sourceTree = "<group>"; };
+		63B273B91EA610CA00F581B2 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		63B273BB1EA610CA00F581B2 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		63B273BD1EA610CA00F581B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63B273C61EA6234700F581B2 /* CounterRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterRealm.swift; sourceTree = "<group>"; };
+		8234F8154AA4196C6E38CEE5 /* Pods-SmartDoorBell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDoorBell.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartDoorBell/Pods-SmartDoorBell.release.xcconfig"; sourceTree = "<group>"; };
+		9742BDDD07ED42454AB92910 /* Pods-SmartDoorBell-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDoorBell-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartDoorBell-OneSignalNotificationServiceExtension/Pods-SmartDoorBell-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		F8F580DC07AB2CA69368C045 /* Pods-SmartDoorBellTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDoorBellTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartDoorBellTests/Pods-SmartDoorBellTests.release.xcconfig"; sourceTree = "<group>"; };
+		FB3C5D1F0EF79F03ECDB0F44 /* Pods-SmartDoorBell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDoorBell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartDoorBell/Pods-SmartDoorBell.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63B273801EA5791A00F581B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E6453082F3CA1C15AA3004E /* Pods_SmartDoorBell.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63B273941EA5791A00F581B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B189CB6F3B5BE1DA6DF704ED /* Pods_SmartDoorBellTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63B273B61EA610CA00F581B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D89D0D19D94BB4FB69D3302C /* Pods_SmartDoorBell_OneSignalNotificationServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1786D1DFE0DDAE8A39415E57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB3C5D1F0EF79F03ECDB0F44 /* Pods-SmartDoorBell.debug.xcconfig */,
+				8234F8154AA4196C6E38CEE5 /* Pods-SmartDoorBell.release.xcconfig */,
+				43CAE39C01999C7DA686805B /* Pods-SmartDoorBellTests.debug.xcconfig */,
+				F8F580DC07AB2CA69368C045 /* Pods-SmartDoorBellTests.release.xcconfig */,
+				5AC375E8F726F1536FC88429 /* Pods-SmartDoorBell-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				9742BDDD07ED42454AB92910 /* Pods-SmartDoorBell-OneSignalNotificationServiceExtension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		63B2737A1EA5791A00F581B2 = {
+			isa = PBXGroup;
+			children = (
+				63B273851EA5791A00F581B2 /* SmartDoorBell */,
+				63B273BA1EA610CA00F581B2 /* OneSignalNotificationServiceExtension */,
+				63B2739A1EA5791A00F581B2 /* SmartDoorBellTests */,
+				63B273841EA5791A00F581B2 /* Products */,
+				1786D1DFE0DDAE8A39415E57 /* Pods */,
+				C7CBBC60567F87F104AFD964 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		63B273841EA5791A00F581B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63B273831EA5791A00F581B2 /* SmartDoorBell.app */,
+				63B273971EA5791A00F581B2 /* SmartDoorBellTests.xctest */,
+				63B273B91EA610CA00F581B2 /* OneSignalNotificationServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63B273851EA5791A00F581B2 /* SmartDoorBell */ = {
+			isa = PBXGroup;
+			children = (
+				63B273B41EA60C5600F581B2 /* SmartDoorBell.entitlements */,
+				63B273A71EA57A1F00F581B2 /* Delegate */,
+				63B273881EA5791A00F581B2 /* MainViewController.swift */,
+				63B273B21EA5F41B00F581B2 /* MainTextFieldExtension.swift */,
+				63B273A81EA57AA000F581B2 /* BufferViewController.swift */,
+				6305E79A1ED4246600F767A7 /* IndexViewController.swift */,
+				6305E79C1ED556E900F767A7 /* IndexCollectionViewController.swift */,
+				6305E79E1ED557AA00F767A7 /* DeviceCollectionCell.swift */,
+				6305E7A01ED557FB00F767A7 /* RoomCollectionCell.swift */,
+				6305E7A21ED5582200F767A7 /* SceneCollectionCell.swift */,
+				6305E7A41ED56DA900F767A7 /* CallViewController.swift */,
+				6305E7A61ED5820B00F767A7 /* SideMenuViewController.swift */,
+				63B273AD1EA57F4A00F581B2 /* APIService */,
+				63B273C51EA6232200F581B2 /* Realm */,
+				63B273AA1EA57EA300F581B2 /* Extension */,
+				63B2738A1EA5791A00F581B2 /* Main.storyboard */,
+				63B2738F1EA5791A00F581B2 /* LaunchScreen.storyboard */,
+				63B273A61EA57A0500F581B2 /* Support Files */,
+			);
+			path = SmartDoorBell;
+			sourceTree = "<group>";
+		};
+		63B2739A1EA5791A00F581B2 /* SmartDoorBellTests */ = {
+			isa = PBXGroup;
+			children = (
+				63B2739B1EA5791A00F581B2 /* SmartDoorBellTests.swift */,
+				63B2739D1EA5791A00F581B2 /* Info.plist */,
+			);
+			path = SmartDoorBellTests;
+			sourceTree = "<group>";
+		};
+		63B273A61EA57A0500F581B2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				63B2738D1EA5791A00F581B2 /* Assets.xcassets */,
+				63B273921EA5791A00F581B2 /* Info.plist */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		63B273A71EA57A1F00F581B2 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				63B273861EA5791A00F581B2 /* AppDelegate.swift */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		63B273AA1EA57EA300F581B2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				63B273AB1EA57EC400F581B2 /* UIExtension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		63B273AD1EA57F4A00F581B2 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				63B273AE1EA57F6000F581B2 /* APIDefinition.swift */,
+				63B273B01EA57F7200F581B2 /* APIProvider.swift */,
+			);
+			name = APIService;
+			sourceTree = "<group>";
+		};
+		63B273BA1EA610CA00F581B2 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				63B273BB1EA610CA00F581B2 /* NotificationService.swift */,
+				63B273BD1EA610CA00F581B2 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		63B273C51EA6232200F581B2 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				63B273C61EA6234700F581B2 /* CounterRealm.swift */,
+			);
+			name = Realm;
+			sourceTree = "<group>";
+		};
+		C7CBBC60567F87F104AFD964 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E62E35933E7C0CF8B3C2AC9 /* Pods_SmartDoorBell.framework */,
+				2992F5EBE973C82F63E58E74 /* Pods_SmartDoorBellTests.framework */,
+				5B399A6729C2C4D40BFAA3D2 /* Pods_SmartDoorBell_OneSignalNotificationServiceExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63B273821EA5791A00F581B2 /* SmartDoorBell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63B273A01EA5791A00F581B2 /* Build configuration list for PBXNativeTarget "SmartDoorBell" */;
+			buildPhases = (
+				DBC0D62A887E30161ECB5D97 /* [CP] Check Pods Manifest.lock */,
+				63B2737F1EA5791A00F581B2 /* Sources */,
+				63B273801EA5791A00F581B2 /* Frameworks */,
+				63B273811EA5791A00F581B2 /* Resources */,
+				DAE5C0B9D7FDD760FE7BE0E8 /* [CP] Embed Pods Frameworks */,
+				AE39D9CC6D428FD4593FE5E1 /* [CP] Copy Pods Resources */,
+				63B273C41EA610CB00F581B2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63B273BF1EA610CA00F581B2 /* PBXTargetDependency */,
+			);
+			name = SmartDoorBell;
+			productName = SmartDoorBell;
+			productReference = 63B273831EA5791A00F581B2 /* SmartDoorBell.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63B273961EA5791A00F581B2 /* SmartDoorBellTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63B273A31EA5791A00F581B2 /* Build configuration list for PBXNativeTarget "SmartDoorBellTests" */;
+			buildPhases = (
+				A6F5583B148A3DD7026054FF /* [CP] Check Pods Manifest.lock */,
+				63B273931EA5791A00F581B2 /* Sources */,
+				63B273941EA5791A00F581B2 /* Frameworks */,
+				63B273951EA5791A00F581B2 /* Resources */,
+				9C7027A97CC61D50BBDF6B60 /* [CP] Embed Pods Frameworks */,
+				F24901581A942336C98C7783 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63B273991EA5791A00F581B2 /* PBXTargetDependency */,
+			);
+			name = SmartDoorBellTests;
+			productName = SmartDoorBellTests;
+			productReference = 63B273971EA5791A00F581B2 /* SmartDoorBellTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		63B273B81EA610CA00F581B2 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63B273C11EA610CB00F581B2 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				DA9952C1309D3DD976C3CECA /* [CP] Check Pods Manifest.lock */,
+				63B273B51EA610CA00F581B2 /* Sources */,
+				63B273B61EA610CA00F581B2 /* Frameworks */,
+				63B273B71EA610CA00F581B2 /* Resources */,
+				C56035FEA7F9469C165DB34D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 63B273B91EA610CA00F581B2 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63B2737B1EA5791A00F581B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Archerwind;
+				TargetAttributes = {
+					63B273821EA5791A00F581B2 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = V7BTVZPG2E;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					63B273961EA5791A00F581B2 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 63B273821EA5791A00F581B2;
+					};
+					63B273B81EA610CA00F581B2 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = V7BTVZPG2E;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 63B2737E1EA5791A00F581B2 /* Build configuration list for PBXProject "SmartDoorBell" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63B2737A1EA5791A00F581B2;
+			productRefGroup = 63B273841EA5791A00F581B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63B273821EA5791A00F581B2 /* SmartDoorBell */,
+				63B273961EA5791A00F581B2 /* SmartDoorBellTests */,
+				63B273B81EA610CA00F581B2 /* OneSignalNotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63B273811EA5791A00F581B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63B273911EA5791A00F581B2 /* LaunchScreen.storyboard in Resources */,
+				63B2738E1EA5791A00F581B2 /* Assets.xcassets in Resources */,
+				63B2738C1EA5791A00F581B2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63B273951EA5791A00F581B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63B273B71EA610CA00F581B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9C7027A97CC61D50BBDF6B60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartDoorBellTests/Pods-SmartDoorBellTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6F5583B148A3DD7026054FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AE39D9CC6D428FD4593FE5E1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartDoorBell/Pods-SmartDoorBell-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C56035FEA7F9469C165DB34D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartDoorBell-OneSignalNotificationServiceExtension/Pods-SmartDoorBell-OneSignalNotificationServiceExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA9952C1309D3DD976C3CECA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DAE5C0B9D7FDD760FE7BE0E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartDoorBell/Pods-SmartDoorBell-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBC0D62A887E30161ECB5D97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F24901581A942336C98C7783 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartDoorBellTests/Pods-SmartDoorBellTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63B2737F1EA5791A00F581B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6305E7A11ED557FB00F767A7 /* RoomCollectionCell.swift in Sources */,
+				6305E7A31ED5582200F767A7 /* SceneCollectionCell.swift in Sources */,
+				63B273A91EA57AA000F581B2 /* BufferViewController.swift in Sources */,
+				63B273891EA5791A00F581B2 /* MainViewController.swift in Sources */,
+				6305E79B1ED4246600F767A7 /* IndexViewController.swift in Sources */,
+				63B273AF1EA57F6000F581B2 /* APIDefinition.swift in Sources */,
+				6305E7A51ED56DA900F767A7 /* CallViewController.swift in Sources */,
+				63B273871EA5791A00F581B2 /* AppDelegate.swift in Sources */,
+				6305E79D1ED556E900F767A7 /* IndexCollectionViewController.swift in Sources */,
+				63B273B31EA5F41B00F581B2 /* MainTextFieldExtension.swift in Sources */,
+				6305E79F1ED557AA00F767A7 /* DeviceCollectionCell.swift in Sources */,
+				63B273AC1EA57EC400F581B2 /* UIExtension.swift in Sources */,
+				63B273C71EA6234700F581B2 /* CounterRealm.swift in Sources */,
+				6305E7A71ED5820B00F767A7 /* SideMenuViewController.swift in Sources */,
+				63B273B11EA57F7200F581B2 /* APIProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63B273931EA5791A00F581B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63B2739C1EA5791A00F581B2 /* SmartDoorBellTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63B273B51EA610CA00F581B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63B273BC1EA610CA00F581B2 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63B273991EA5791A00F581B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63B273821EA5791A00F581B2 /* SmartDoorBell */;
+			targetProxy = 63B273981EA5791A00F581B2 /* PBXContainerItemProxy */;
+		};
+		63B273BF1EA610CA00F581B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63B273B81EA610CA00F581B2 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 63B273BE1EA610CA00F581B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		63B2738A1EA5791A00F581B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63B2738B1EA5791A00F581B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63B2738F1EA5791A00F581B2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63B273901EA5791A00F581B2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63B2739E1EA5791A00F581B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		63B2739F1EA5791A00F581B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63B273A11EA5791A00F581B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB3C5D1F0EF79F03ECDB0F44 /* Pods-SmartDoorBell.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SmartDoorBell/SmartDoorBell.entitlements;
+				DEVELOPMENT_TEAM = V7BTVZPG2E;
+				INFOPLIST_FILE = SmartDoorBell/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Giftpack.SmartDoorBell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		63B273A21EA5791A00F581B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8234F8154AA4196C6E38CEE5 /* Pods-SmartDoorBell.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SmartDoorBell/SmartDoorBell.entitlements;
+				DEVELOPMENT_TEAM = V7BTVZPG2E;
+				INFOPLIST_FILE = SmartDoorBell/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Giftpack.SmartDoorBell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		63B273A41EA5791A00F581B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43CAE39C01999C7DA686805B /* Pods-SmartDoorBellTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SmartDoorBellTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Giftpack.SmartDoorBellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartDoorBell.app/SmartDoorBell";
+			};
+			name = Debug;
+		};
+		63B273A51EA5791A00F581B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8F580DC07AB2CA69368C045 /* Pods-SmartDoorBellTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SmartDoorBellTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Giftpack.SmartDoorBellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartDoorBell.app/SmartDoorBell";
+			};
+			name = Release;
+		};
+		63B273C21EA610CB00F581B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AC375E8F726F1536FC88429 /* Pods-SmartDoorBell-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = V7BTVZPG2E;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Giftpack.SmartDoorBell.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		63B273C31EA610CB00F581B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9742BDDD07ED42454AB92910 /* Pods-SmartDoorBell-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = V7BTVZPG2E;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Giftpack.SmartDoorBell.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63B2737E1EA5791A00F581B2 /* Build configuration list for PBXProject "SmartDoorBell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63B2739E1EA5791A00F581B2 /* Debug */,
+				63B2739F1EA5791A00F581B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63B273A01EA5791A00F581B2 /* Build configuration list for PBXNativeTarget "SmartDoorBell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63B273A11EA5791A00F581B2 /* Debug */,
+				63B273A21EA5791A00F581B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63B273A31EA5791A00F581B2 /* Build configuration list for PBXNativeTarget "SmartDoorBellTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63B273A41EA5791A00F581B2 /* Debug */,
+				63B273A51EA5791A00F581B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63B273C11EA610CB00F581B2 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63B273C21EA610CB00F581B2 /* Debug */,
+				63B273C31EA610CB00F581B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63B2737B1EA5791A00F581B2 /* Project object */;
+}
