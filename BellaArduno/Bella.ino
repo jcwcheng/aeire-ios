@@ -18,10 +18,11 @@
 const char* ssid = "ma234";
 const char* password = "jasonjennifer";
 
-const char* fingerprint = "47 18 D6 BE F5 D0 BF CE 01 B7 AD BD 96 3A AA 46 F1 8C F1 A5";
-const char* account_sid = "AC14dc7c78caa034614c779ef540c3fe61";
-const char* auth_token = "9457c3955d0c80d70bc1fc309bd43cf9";
-String to_number    = "+14157489861";
+const char* fingerprint = "your_fingerprint";
+//A 34 character string that uniquely identifies this resource.
+const char* account_sid = "ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const char* auth_token = "your_auth_token";
+String to_number    = "+14083986530";
 String from_number  = "+16507724292";
 String message_body = "Justin! Someone is ringing your doorbell!";
 String master_number = "+16507724292";
